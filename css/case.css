@@ -1,0 +1,61 @@
+.card{
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+  position: relative; /* 新增此行 */
+
+}
+
+/* 動物名稱標籤樣式 */
+.pet-name-tag {
+  position: absolute;
+  top: 18px;
+  left: -8px;
+  background-color: #4ea800; /* 綠色背景 */
+  color: white;
+  padding: 0.25rem 0.75rem 0.25rem calc(0.5rem + 8px); /* 上右下左內邊距 */
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  z-index: 10; /* 確保在圖片上方 */
+  line-height: 1; /* 避免額外行高影響 */
+  border-radius: 0 5px 0px 0px;
+}
+
+/* 創建內折效果的偽元素 */
+.pet-name-tag::after {
+  content: '';
+  position: absolute;
+  top: 100%; /* 位於標籤底部 */
+  left: 0px;
+  border-top: 8px solid #1e7e34; /* 深綠色邊框，形成折疊的顏色 */
+  border-left: 8px solid transparent; /* 左側透明，形成三角形 */
+  filter: brightness(85%); /* 讓折疊部分顏色稍微暗一點，增加立體感 */
+
+}
+
+@media (min-width:576px){
+  .card-columns{
+    column-count: 2;
+  }
+}
+
+@media (min-width:768px){
+  .card-columns{
+    column-count: 3;
+  }
+}
+
+@media (min-width:992px){
+  .card-columns{
+    column-count:4;
+  }
+}
+
+@media (min-width:1200px){
+  .card-columns{
+    column-count: 5;
+  }
+}
+
+

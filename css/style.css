@@ -1,0 +1,216 @@
+/* 文字字形 */
+body{
+    font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: ; */
+  /* font-style: normal; */
+}
+
+/* header-start */
+
+.navbar{
+  padding: 10px 0px;
+}
+
+@media (max-width: 767px){
+  .navbar{
+  padding: 6px 0px;
+}
+}
+
+/* 針對主導覽列的 nav-link.active 樣式 */
+#mainNavList .nav-link.active {
+  color: rgb(31, 24, 2); /* 黑色文字 */
+  background-color: rgb(255, 246, 211); /* 淺黃色底 */
+  border-radius: 8px;
+}
+
+/* 針對下拉選單中的 dropdown-item.active 樣式 */
+#mainNavList .dropdown-item.active {
+  color: rgb(31, 24, 2); /* 黑色文字 */
+  background-color: rgb(255, 246, 211) !important; 
+  /* 下拉選單項目通常不需要 border-radius，但你可以根據設計自行決定 */
+}
+
+/* 覆寫 Bootstrap 對於下拉選單項目點擊瞬間的 active 狀態樣式 */
+#mainNavList .dropdown-item:active {
+  color: rgb(31, 24, 2) !important; /* 確保點擊瞬間文字顏色也是你的黑色 */
+  background-color: rgb(255, 246, 211) !important; /* 確保點擊瞬間背景色也是你的淺黃色 */
+}
+
+/* logo-start */
+.desktop-logo{
+  height: 80px;
+  
+}
+
+.mobile-logo{
+  height: 60px;
+}
+
+.navbar-brand{
+  margin-right: 0;
+}
+
+.bg-body-tertiary{
+  background-color: rgb(255, 255, 255) !important;
+}
+
+/* 漢堡選單start */
+
+
+/* 漢堡選單圖標顏色 */
+.navbar-toggler-icon {
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(199,128,0,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+
+.navbar-toggler {
+    background-color: transparent !important;
+    border-color: transparent !important; 
+    color: transparent;
+}
+
+
+
+/* 漢堡選單end */
+
+
+/* 調整導覽列文字大小 */
+.navbar-nav .nav-link {
+  font-size: 1.3rem;  
+  font-weight: 550;  
+  color: rgba(31, 24, 2, 0.706);   
+  
+}
+
+/* 下拉選單的子項目也調整 */
+.dropdown-menu .dropdown-item {
+  font-size: 1.15rem;  
+}
+/* 手機版 (md 以下) */
+@media (max-width: 767px) {
+ 
+#navbarSupportedContent{
+  margin-top: 5px;
+  border-top: 1px dotted rgb(167, 128, 0);
+  padding-top: 10px;
+}
+    .navbar-nav .nav-link {
+    display: block;     
+    text-align: left;        
+    padding-left: 39%;      
+  }
+
+  .dropdown-menu{
+    text-align: center;
+  }
+}
+
+
+/* logo-end */
+
+/* header-end */
+
+/* 輪播圖高度調整start */
+
+.carousel-caption h1{
+  font-size: 2rem;
+}
+
+.carousel-caption p{
+  font-size: 1.5rem;
+}
+
+.carousel-caption h1,.carousel-caption p{
+  text-shadow: 1px 1px 4px rgba(20, 16, 1, 0.956);
+}
+
+.carousel-item img {
+  height: 70vh; /* 依你想要的高度調整 */
+  object-fit: cover; /* 保持比例填滿 */
+}
+
+@media (max-width: 767px){
+
+  .carousel-item img {
+  height: 50vh; /* 依你想要的高度調整 */
+ 
+}
+
+.carousel-caption h1{
+  font-size: 1.4rem;
+}
+
+.carousel-caption p{
+  font-size: 1.2rem;
+}
+}
+
+/* 輪播圖高度調整end */
+
+/* 認養卡片start */
+
+.for-title{
+  font-size: 1.5rem;
+}
+
+.for-text{
+
+  font-size: 1.2rem;
+}
+
+/* 貓咪按鈕start */
+.card-cat-btn{
+  background-color: rgb(255, 163, 114);
+}
+
+.card-cat-btn:hover{
+  background-color: rgb(255, 146, 87);
+}
+
+.card-cat-btn:active{
+   background-color: rgb(255, 146, 87) !important;
+}
+
+.card-dog-btn{
+  background-color: rgb(246, 220, 100);
+}
+
+.card-dog-btn:hover{
+  background-color:  rgb(239, 204, 51);
+}
+
+.card-dog-btn:active{
+   background-color: rgb(239, 204, 51) !important;
+}
+
+
+/* 貓咪按鈕end */
+
+/* 認養卡片end */
+
+/* 頁尾start */
+
+footer{
+  background-color: rgb(231, 199, 130);
+  /* background-color:#392c06; */
+  /* color: aliceblue; */
+  
+
+}
+i{
+  font-size: 2rem;
+  color: rgb(70, 40, 0);
+  /* color:white ; */
+}
+
+.fa-line{
+  font-size: 1.75rem;
+}
+/* 頁尾end */
+
+
+
+

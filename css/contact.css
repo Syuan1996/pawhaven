@@ -1,0 +1,89 @@
+/* jumbotron滿版封面圖-start */
+.j1 {
+  background-image: url(../images/contact/contact-banner.jpg);
+  background-position: left 13% bottom 60%;
+  background-size: cover;
+  margin-bottom: 30px;
+  color: #fff; /* 文字顏色改為白色，以便在圖片上清晰顯示 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 增加文字陰影，提升可讀性 */
+  min-height: 450px; /* 設置最小高度 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.j1 h1 {
+  font-size: 2.5rem;
+
+  margin-bottom: 1rem;
+}
+
+.j1 p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* jumbotron滿版封面圖-end */
+
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+
+   .j1 {
+  background-position: left 15% bottom 10%;
+  min-height: 200px; /* 設置最小高度 */
+
+}
+  .j1 h1 {
+    font-size: 1.9rem;
+  }
+
+  .j1 p {
+    font-size: 1rem;
+  }
+}
+
+.map-box {
+  height: 550px; /* 預設桌機高度 */
+}
+
+@media (max-width: 768px) {
+  .map-box {
+    height: 300px; /* 手機高度 */
+  }
+}
+
+label{
+  font-size: 17px;
+  padding-left: 3px;
+}
+
+.form-control:focus,
+input:focus,
+textarea:focus {
+  outline: none !important;        /* 移除藍色外框 */
+  box-shadow: none !important;     /* 移除 Bootstrap 預設陰影 */
+  border-color: rgb(116, 116, 116) !important;
+}
+
+/* 金黃咖啡色按鈕 */
+.btn-gold {
+  background-color: #c59d5f; /* 金黃咖啡色 */
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 20px;
+}
+
+.btn-gold:hover {
+  color: #fff;
+  background-color: #a6783d; /* 深一點的咖啡金 */
+  transform: translateY(-2px);
+}
+
+.btn-gold:active {
+  background-color: #8a622f; /* 更深色，按下時 */
+  transform: translateY(0);
+}

@@ -1,0 +1,157 @@
+
+main{
+  margin-bottom: 30px;
+}
+
+:root {
+ 
+  --golden-medium: #38640c; 
+  --golden-light: #d8ed93; 
+  --cream-bg: #e4eadad0;; 
+  --text-dark: #36454f;
+  --text-medium: #5a5a5a; 
+  --border-light: #e0d8b0; 
+}
+
+
+/* jumbotron滿版封面圖-start */
+.j1 {
+  background-image: url(../images/qa/qabanner.jpeg);
+  background-position: left 13% bottom 49%;
+  background-size: cover;
+  margin-bottom: 30px;
+  color: #fff; /* 文字顏色改為白色，以便在圖片上清晰顯示 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 增加文字陰影，提升可讀性 */
+  min-height: 450px; /* 設置最小高度 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.j1 h1 {
+    font-size: 2.5rem;
+
+  margin-bottom: 1rem;
+}
+
+.j1 p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* jumbotron滿版封面圖-end */
+
+/* Tabs 切換按鈕樣式 */
+.qaTab {
+  margin-top: 20px; /* 讓按鈕與 Jumbotron 有一些間距 */
+  margin-bottom: 30px; /* 讓按鈕與下方內容有更多間距 */
+  padding-left: 0;
+}
+
+.qaTab .nav-item {
+  list-style: none;
+  font-size: 20px;
+}
+
+.qaTab .nav-link {
+  
+  color: var(--text-medium); /* 未激活時的文字顏色 */
+  font-weight: 600;
+  padding: 10px 20px; /* 增加內邊距讓按鈕看起來更大方 */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-light); /* 淺金黃色邊框 */
+  background-color: #f8f8f8; /* 淺灰色背景 */
+}
+
+.qaTab .nav-link:hover {
+  color: var(--golden-dark); /* hover 時文字顏色變深金色 */
+  background-color: var(--golden-light); /* 淺金色背景 */
+  
+}
+
+.qaTab .nav-link.active {
+  color: #fff; /* 激活時文字顏色為白色 */
+  background-color: var(--golden-medium); /* 激活時背景色為中等金色 */
+
+
+}
+
+/* Accordion 樣式 */
+.accordion-item {
+  margin-bottom: 15px;
+ 
+  border-radius: px;
+  overflow: hidden;
+  border: none;
+
+}
+
+.accordion-header {
+  background-color: var(--cream-bg); /* 奶油色背景 */
+  border-bottom: 1px solid var(--border-light); /* 淺金黃色底部邊框 */
+}
+
+.accordion-button {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-dark); /* 深炭灰色文字 */
+  padding: 15px 20px;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  color: rgb(27, 14, 1); 
+  background-color: var(--golden-light); 
+  
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.accordion-body {
+  padding: 20px;
+  line-height: 1.6;
+  color: var(--text-medium); /* 中灰色文字 */
+  background-color: #fff; /* 內容區塊背景保持白色 */
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+
+   .j1 {
+  background-position: left 15% bottom 10%;
+  min-height: 200px; /* 設置最小高度 */
+
+}
+  .j1 h1 {
+    font-size: 1.9rem;
+  }
+
+  .j1 p {
+    font-size: 1rem;
+  }
+
+ 
+  .qaTab .nav-link {
+    padding: 8px 15px;
+    
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+
+  .accordion-body {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+}

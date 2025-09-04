@@ -1,0 +1,198 @@
+/* banner影片區start */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 86vh; /* 讓容器佔滿視窗高度，你可以根據需求調整 */
+    overflow: hidden;
+}
+
+@media (max-width: 768px){
+
+  .video-container {
+ 
+    height: 46vh; 
+ 
+}
+
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 確保影片填滿容器 */
+    opacity: 0; /* 預設隱藏 */
+    transition: opacity 1s ease-in-out; /* 淡入淡出效果，持續1秒 */
+}
+
+.video-bg.active {
+    opacity: 1; /* 顯示當前活躍的影片 */
+}
+
+.banner-text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 置中 */
+  color: white;
+  font-size: 1.8rem;
+  min-width: 300px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* 讓文字更清楚 */
+  opacity: 0;
+  animation: fadeInOut 7s infinite; /* 循環淡入淡出 */
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 0; }
+  40% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* banner影片區end */
+
+/* about_start */
+
+.about h3,.advantage h3{
+  color: rgba(55, 42, 2, 0.9);
+  
+}
+.about .dog{
+  transform: scale(0.8);
+}
+.about .cat{
+  transform: scale(0.7);
+}
+
+
+
+
+/* about_end */
+
+/* 優勢start */
+
+.goodcircle {
+        width: 220px;
+        height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+  .advantage-text{
+      max-width: 280px;
+      margin: 0 auto;
+  }
+
+/* 優勢end */
+
+/* jumbotron滿版看版區連到內頁案例-start */
+.j1{
+  background-image: url(../images/index/adopt.jpeg);
+  background-position: bottom ;
+  background-size: cover;
+  height: 520px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@media (max-width: 1280px){
+  .j1{
+    flex-direction: column;
+    justify-content: space-between;
+     align-items: center;
+     padding: 15px ;
+  }
+}
+
+@media (max-width: 768px){
+  
+  .j1{
+  background-position: center ;
+    height: 300px;
+    padding: 0px;
+  }
+}
+.adoptcasepoint{
+  background-color: rgba(255, 251, 246, 0.5);
+  background-image: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.8) 0%, /* 底部：80% 不透明度 */
+        rgba(255, 255, 255, 0.0) 100% /* 頂部：完全透明 */
+    );
+  padding: 10px;
+  backdrop-filter: blur(2px);
+  padding: 20px 10px;
+  color: rgb(39, 17, 2);
+
+}
+
+ .adoptcasepoint button{
+  background-color: white !important;
+   border: none !important;
+   outline: none !important;
+ }
+
+  .adoptcasepoint button:hover{
+    background-color: rgb(225, 253, 200) !important;
+    
+   
+  }
+
+  .adoptcasepoint button:active{
+      background-color: rgb(225, 253, 200) !important;
+  }
+
+@media (max-width: 1280px){
+    .adoptcasepoint{
+        background-color:transparent;
+        backdrop-filter: blur(0px);
+    }
+}
+
+.adoptcasepoint p{
+  padding-bottom: 15px;
+}
+
+@media (max-width: 1280px){
+    .adoptcasepoint{
+      position: relative;
+      height: 100%;
+      padding: 10px 10px;
+  
+    }
+
+    .adoptcasepoint p{
+
+        background-color: rgba(255, 251, 246, 0.6);
+
+  padding: 20px 10px;
+  color: rgb(39, 17, 2);
+
+   }
+  .adoptcasepoint button{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 120px;
+  }
+}
+
+.adoptcasepoint button a{
+  text-decoration: none;
+  color: black;
+}
+
+/* jumbotron滿版看版區連到內頁案例-end */
+
+
